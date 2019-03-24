@@ -13,6 +13,11 @@ npm install legnoh/daikin-air-purifier
 ```js
 const Daikin = require('daikin-air-purifier')
 
+const AIRVOL_AUTOFAN = 0;
+const AIRVOL_QUIET = 1;
+const AIRVOL_LOW = 2;
+const AIRVOL_STANDARD = 3;
+const AIRVOL_TURBO = 5;
 const HUMD_OFF = 0;
 const HUMD_LOW = 1;
 const HUMD_STANDARD = 2;
