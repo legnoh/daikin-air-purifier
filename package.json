@@ -2,6 +2,11 @@
   "name": "daikin-air-purifier",
   "version": "0.0.1",
   "main": "lib/index.js",
+  "files": [
+    "lib/*.js",
+    "lib/*.d.ts",
+    "lib/*.map"
+  ],
   "repository": "https://github.com/legnoh/daikin-air-purifier.git",
   "author": "Ryoma Kai <legknmj@icloud.com>",
   "license": "MIT",
