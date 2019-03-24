@@ -92,3 +92,4 @@ typings/
 ### lib/
 lib/*.js
 lib/*.ts
+lib/*.map

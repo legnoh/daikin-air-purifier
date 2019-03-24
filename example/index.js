@@ -1,5 +1,10 @@
 const Daikin = require('../lib/index.js');
 
+const AIRVOL_AUTOFAN = 0;
+const AIRVOL_QUIET = 1;
+const AIRVOL_LOW = 2;
+const AIRVOL_STANDARD = 3;
+const AIRVOL_TURBO = 5;
 const HUMD_OFF = 0;
 const HUMD_LOW = 1;
 const HUMD_STANDARD = 2;
@@ -53,6 +58,11 @@ async function setCirculatorMode() {
     console.log(response);
 }
 
+async function setAirvol(level) {
+    let response = await client.setAirvol(level);
+    console.log(response);
+}
+
 async function setHumd(level) {
     let response = await client.setHumd(level);
     console.log(response);
@@ -67,4 +77,5 @@ async function setHumd(level) {
 // setPollenMode();
 // setMoistMode();
 // setCirculatorMode();
-setHumd(HUMD_STANDARD);
+// setAirvol(AIRVOL_STANDARD);
+// setHumd(HUMD_STANDARD);
