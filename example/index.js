@@ -28,6 +28,11 @@ async function powerOff() {
     console.log(response);
 }
 
+async function setPower(pow) {
+    let response = await client.setPower(pow);
+    console.log(response);
+}
+
 async function setSmartMode() {
     let response = await client.setSmartMode();
     console.log(response);
@@ -71,6 +76,7 @@ async function setHumd(level) {
 // getUnitInfo();
 // powerOn();
 // powerOff();
+// setPower(POW_ON);
 // setSmartMode();
 // setAutofanMode();
 // setEconoMode();

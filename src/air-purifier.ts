@@ -57,6 +57,10 @@ export class AirPurifier {
         return await this.setControlInfo(POW_OFF);
     }
 
+    public async setPower(pow: number) {
+        return await this.setControlInfo(pow);
+    }
+
     public async setSmartMode() {
         return await this.setControlInfo(POW_ON, MODE_SMART, AIRVOL_AUTOFAN, HUMD_AUTO);
     }
