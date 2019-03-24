@@ -66,8 +66,8 @@ async function setCirculatorMode() {
     console.log(response);
 }
 
-async function setHumd(level) {
-    let response = await client.setHumd(level);
+async function setAirvol(level) {
+    let response = await client.setAirvol(level);
     console.log(response);
 }
 
