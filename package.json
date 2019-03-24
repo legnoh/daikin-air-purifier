@@ -1,0 +1,18 @@
+{
+  "name": "daikin-air-purifier",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "repository": "https://github.com/legnoh/daikin-air-purifier.git",
+  "author": "Ryoma Kai <legknmj@icloud.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./lib/* && tsc",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^3.3.4000"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
