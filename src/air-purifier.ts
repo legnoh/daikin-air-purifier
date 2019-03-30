@@ -91,7 +91,7 @@ export class AirPurifier {
 
     public async setAirvol(airvol: number) {
         const unitInfo = await this.getUnitInfo();
-        return await this.setControlInfo(unitInfo.ctrl_info.pow, unitInfo.ctrl_info.mode, airvol, unitInfo.ctrl_info.humd);
+        return await this.setControlInfo(unitInfo.ctrl_info.pow, MODE_AUTOFAN, airvol, unitInfo.ctrl_info.humd);
     }
 
     public async setHumd(humd: number) {
