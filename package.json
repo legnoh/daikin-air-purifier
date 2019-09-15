@@ -15,7 +15,7 @@
     "prepare": "npm run build"
   },
   "devDependencies": {
-    "typescript": "^3.3.4000"
+    "typescript": "^3.6.3"
   },
   "dependencies": {
     "axios": "^0.18.0"
